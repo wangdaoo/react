@@ -370,6 +370,7 @@ export function createElement(type, config, children) {
   let source = null;
 
   if (config != null) {
+    // NICE: 处理config，把除了保留属性外的其他config赋值给props
     if (hasValidRef(config)) {
       ref = config.ref;
 
