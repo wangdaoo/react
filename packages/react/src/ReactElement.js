@@ -147,10 +147,10 @@ function warnIfStringRefCannotBeAutoConverted(config) {
 const ReactElement = function(type, key, ref, self, source, owner, props) {
   const element = {
     // This tag allows us to uniquely identify this as a React Element
-    $$typeof: REACT_ELEMENT_TYPE,
+    $$typeof: REACT_ELEMENT_TYPE, // NICE: 表示是ReactElement类型
 
     // Built-in properties that belong on the element
-    type: type,
+    type: type, // NICE: class或function
     key: key,
     ref: ref,
     props: props,
